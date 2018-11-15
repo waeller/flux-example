@@ -17,13 +17,13 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: waeller/flux-helloworld:1.0.1
+        image: waeller/flux-helloworld:1.0.2
         args:
         - -msg=HiWaeller
         ports:
         - containerPort: 80
       - name: sidecar
-        image: waeller/flux-sidecar:1.0.0
+        image: waeller/flux-sidecar:1.0.1
         args:
         - -addr=:8080
         ports:
