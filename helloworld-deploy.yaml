@@ -12,13 +12,13 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: quay.io/weaveworks/helloworld:master-a000001
+        image: waeller/flux-helloworld:1.0.0
         args:
-        - -msg=Hello
+        - -msg=HiWaeller
         ports:
         - containerPort: 80
       - name: sidecar
-        image: quay.io/weaveworks/sidecar:master-a000001
+        image: waeller/flux-sidecar:1.0.0
         args:
         - -addr=:8080
         ports:
