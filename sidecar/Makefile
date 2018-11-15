@@ -1,10 +1,10 @@
 .PHONY: all
 all: .sidecar
 
-REV=a000002
+REV=1.0.1
 
 .sidecar: sidecar-linux-amd64 Dockerfile
-	docker build -t quay.io/weaveworks/sidecar:master-${REV} .
+	docker build -t waeller/flux-sidecar:${REV} .
 	touch $@
 
 sidecar-linux-amd64: sidecar.go Makefile

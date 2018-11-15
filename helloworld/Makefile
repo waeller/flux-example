@@ -1,10 +1,10 @@
 .PHONY: all
 all: .helloworld
 
-REV=a000001
+REV=1.0.2
 
 .helloworld: helloworld-linux-amd64 Dockerfile
-	docker build -t quay.io/weaveworks/helloworld:master-${REV} .
+	docker build -t waeller/flux-helloworld:${REV} .
 	touch $@
 
 helloworld-linux-amd64: helloworld.go

@@ -17,7 +17,7 @@ func main() {
 	flag.Parse()
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("%s %s %s", r.RemoteAddr, r.Method, r.URL.Path)
-		fmt.Fprintf(w, *msg+"\n")
+		fmt.Fprintf(w, *msg+".\n")
 	})
 	log.Printf("%s: listening on %s", rev, *addr)
 	log.Fatal(http.ListenAndServe(*addr, nil))
