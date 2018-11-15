@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: waeller/flux-helloworld:1.0.2
+        image: waeller/flux-helloworld:1.0.1
         args:
         - -msg=HiWaeller
         ports:
