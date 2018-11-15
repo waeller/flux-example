@@ -5,6 +5,8 @@ metadata:
   name: helloworld
   annotations:
     flux.weave.works/automated: 'true'
+    flux.weave.works/tag.helloworld: semver:*
+    flux.weave.works/tag.sidecar: semver:*
 spec:
   minReadySeconds: 5
   replicas: 2
