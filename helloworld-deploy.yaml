@@ -23,7 +23,7 @@ spec:
         ports:
         - containerPort: 80
       - name: sidecar
-        image: waeller/flux-sidecar:1.0.0
+        image: waeller/flux-sidecar:1.0.1
         args:
         - -addr=:8080
         ports:
