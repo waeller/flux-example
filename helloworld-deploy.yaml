@@ -6,7 +6,6 @@ metadata:
   annotations:
     flux.weave.works/tag.helloworld: semver:*
     flux.weave.works/tag.sidecar: semver:*
-  namespace: ladev
 spec:
   minReadySeconds: 5
   replicas: 2
