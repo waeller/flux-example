@@ -18,7 +18,7 @@ spec:
       - name: helloworld
         image: waeller/flux-helloworld:1.0.5
         args:
-        - -msg=Blabla
+        - -msg=Hello LADEV!
         ports:
         - containerPort: 80
       - name: sidecar
